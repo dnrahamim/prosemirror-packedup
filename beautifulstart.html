@@ -8,6 +8,7 @@
   body {
     display: flex;
     min-height: 100vh;
+    max-height: 100vh;
     flex-direction: column;
     margin: 0;
   }
@@ -32,6 +33,7 @@
   #main > article {
     flex: 35;
     order: 3;
+    overflow-y: auto;
   }
   #main > #rightmargin {
     flex: 3.5;
@@ -44,14 +46,23 @@
     order: 5
   }
   header, article, nav, aside {
-    padding: 1em;
+    padding: 7px;
+  }
+  aside > #searchbox {
+    height: 41px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: solid;
+    border-color: lightgrey;
+    border-width: 2px;
   }
   </style>
   <body>
     <header>Header</header>
     <div id="main">
       <nav>Nav</nav>
-      <div id="leftmargin">left</div>
+      <div id="leftmargin"></div>
       <article>
         Article
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci eros, vel scelerisque tellus viverra vel. Aliquam elementum quis diam nec scelerisque. Etiam dignissim congue elit, ac faucibus lacus vulputate ut. Ut commodo porta nibh, in eleifend lacus malesuada a. Pellentesque lacinia erat maximus tortor mollis ullamcorper. Praesent sodales, nibh quis aliquam molestie, metus nunc congue leo, a dictum lacus lectus nec turpis. Praesent accumsan lacinia quam eu congue. Pellentesque et quam nec diam eleifend dictum.
@@ -64,8 +75,10 @@
 
         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at eleifend dolor, id tincidunt arcu. Curabitur nec interdum nulla, ac mattis lorem. Nulla bibendum nibh ac arcu fringilla commodo. Quisque justo diam, tempus eget ipsum sit amet, aliquet lacinia purus. In gravida interdum augue. Duis sit amet cursus ante, sed ullamcorper ligula. In in elit ac sapien mollis dictum. Curabitur auctor velit est, in egestas sapien finibus sit amet. Nulla eu nunc vitae enim consequat aliquam. Etiam quis tincidunt enim.
       </article>
-      <div id="rightmargin">right</div>
-      <aside>Aside</aside>
+      <div id="rightmargin"></div>
+      <aside>
+        <input id="searchbox" type="text" placeholder="search anything">
+      </aside>
     </div>
   </body>
 </html>
