@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <title>Example</title>
+  <link rel=stylesheet href="css/nav.css">
   <style>
   * {
     box-sizing: border-box; 
@@ -27,40 +28,6 @@
     order: 1;
     justify-content: center;
     align-items: center;
-  }
-  nav > .addfieldbtn {
-    width: 75px;
-    height: 70px;
-    background: rgb(255, 255, 255);
-    border-right: solid;
-    border-left: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-  }
-  nav > #inputs {
-    border-radius: 8px 8px 0px 0px;
-    border-top: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-  }
-  nav > #media {
-    border-radius: 0px 0px 8px 8px;
-    border-bottom: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-    margin-bottom: 10px;
-  }
-  nav > #equations {
-    border-radius: 8px 8px 0px 0px;
-    border-top: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-  }
-  nav > #functions {
-    border-radius: 0px 0px 8px 8px;
-    border-bottom: solid;
-    border-color: lightgrey;
-    border-width: 1px;
   }
   #main > #leftmargin {
     flex: 3;
@@ -98,10 +65,41 @@
     <header>Header</header>
     <div id="main">
       <nav>
-        <div id="inputs" class="addfieldbtn"></div>
-        <div id="charts" class="addfieldbtn"></div>
-        <div id="shapes" class="addfieldbtn"></div>
-        <div id="media" class="addfieldbtn"></div>
+        <div id="inputs" class="addfieldbtn">
+          <img src="img/icons-8-rename/icons-8-rename.png"
+              srcset="img/icons-8-rename/icons-8-rename@2x.png 2x,
+                      img/icons-8-rename/icons-8-rename@3x.png 3x"
+              class="fieldbtnicon">
+          <div class="fieldbtntxt">Inputs</div>
+        </div>
+        <div id="table" class="addfieldbtn">
+          <img src="img/icons-8-table-1/icons-8-table-1.png"
+                srcset="img/icons-8-table-1/icons-8-table-1@2x.png 2x,
+                        img/icons-8-table-1/icons-8-table-1@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Inputs</div>
+        </div>
+        <div id="charts" class="addfieldbtn">
+          <img src="img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio.png"
+                srcset="img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio@2x.png 2x,
+                        img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Charts</div>
+        </div>
+        <div id="shapes" class="addfieldbtn">
+          <img src="img/icons-8-metamorphose/icons-8-metamorphose.png"
+                srcset="img/icons-8-metamorphose/icons-8-metamorphose@2x.png 2x,
+                        img/icons-8-metamorphose/icons-8-metamorphose@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Shapes</div>
+        </div>
+        <div id="media" class="addfieldbtn">
+          <img src="img/icons-8-picture/icons-8-picture.png"
+                srcset="img/icons-8-picture/icons-8-picture@2x.png 2x,
+                        img/icons-8-picture/icons-8-picture@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Media</div>
+        </div>
         <div id="equations" class="addfieldbtn"></div>
         <div id="functions" class="addfieldbtn"></div>
       </nav>
